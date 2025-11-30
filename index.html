@@ -2,185 +2,513 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>digiflyers.com is for sale</title>
+  <title>digiflyers.com — Premium domain for digital marketing & design</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="digiflyers.com is a premium domain name ideal for digital marketing, flyer design tools, and AI-powered creative platforms."
+    content="digiflyers.com is a premium, brandable .COM domain ideal for digital marketing agencies, flyer design tools, print-on-demand platforms, and AI-powered creative SaaS."
   />
+  <meta property="og:title" content="digiflyers.com is for sale" />
+  <meta
+    property="og:description"
+    content="Acquire digiflyers.com — a strong, memorable .COM perfect for marketing, design, and AI-powered creative platforms."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amineblq.github.io/digiflyers/" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #020617;
+      --bg-soft: #020617;
+      --card: rgba(15, 23, 42, 0.98);
+      --accent: #f97316;
+      --accent-soft: #facc15;
+      --accent-dark: #ea580c;
+      --border-subtle: rgba(148, 163, 184, 0.4);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --pill-bg: rgba(15, 23, 42, 0.9);
+      --pill-border: rgba(148, 163, 184, 0.5);
+      --success: #22c55e;
+    }
+
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
-      color: #e5e7eb;
+      background:
+        radial-gradient(circle at top, #0f172a 0%, #020617 50%, #000 100%);
+      color: var(--text-main);
       min-height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: stretch;
       justify-content: center;
       padding: 24px;
     }
-    .card {
-      max-width: 640px;
+
+    .page {
+      max-width: 1120px;
       width: 100%;
-      background: rgba(15, 23, 42, 0.92);
-      border-radius: 18px;
-      padding: 28px 24px 24px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(148, 163, 184, 0.35);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.6fr);
+      gap: 24px;
     }
+
+    .card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 26px 26px 22px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+    }
+
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 12px;
-      padding: 4px 10px;
+      font-size: 11px;
+      padding: 3px 10px;
       border-radius: 999px;
-      background: rgba(22, 163, 74, 0.12);
+      background: rgba(22, 163, 74, 0.08);
       color: #bbf7d0;
-      border: 1px solid rgba(34, 197, 94, 0.4);
+      border: 1px solid rgba(34, 197, 94, 0.45);
       margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--success);
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
+    }
+
     h1 {
-      font-size: 28px;
-      line-height: 1.2;
+      font-size: 30px;
+      line-height: 1.15;
       margin-bottom: 10px;
     }
+
     .domain {
-      color: #e5e7eb;
+      color: #f9fafb;
       font-weight: 700;
     }
+
     .subtitle {
       font-size: 14px;
-      color: #9ca3af;
-      margin-bottom: 20px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      max-width: 520px;
     }
-    .pill {
-      display: inline-flex;
+
+    .pill-row {
+      display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 22px;
     }
-    .pill span {
+
+    .pill {
       font-size: 11px;
-      padding: 4px 10px;
+      padding: 5px 10px;
       border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.45);
+      border: 1px solid var(--pill-border);
+      background: var(--pill-bg);
       color: #cbd5f5;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(248, 250, 252, 0.65);
+    }
+
+    .price-section {
+      border-radius: 18px;
+      padding: 16px 16px 14px;
+      background: radial-gradient(circle at top left, rgba(248, 250, 252, 0.12), transparent 60%);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      margin-bottom: 18px;
+    }
+
     .price-row {
       display: flex;
-      align-items: baseline;
       justify-content: space-between;
-      margin-bottom: 20px;
-      gap: 10px;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 12px;
     }
+
     .price-main {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 700;
-      color: #fbbf24;
+      color: #fed7aa;
     }
+
+    .price-main span {
+      font-size: 16px;
+      font-weight: 500;
+      color: #e5e7eb;
+      margin-left: 4px;
+    }
+
     .price-note {
       font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .price-tagline {
+      font-size: 11px;
       color: #9ca3af;
     }
+
     .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-bottom: 16px;
     }
-    .btn-primary, .btn-ghost {
+
+    .btn-primary,
+    .btn-secondary {
       flex: 1 1 160px;
       text-align: center;
       padding: 12px 16px;
       border-radius: 999px;
       font-size: 14px;
       text-decoration: none;
-      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
       cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease,
+        border-color 0.12s ease, color 0.12s ease;
     }
+
     .btn-primary {
-      background: linear-gradient(135deg, #f97316, #facc15);
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
       color: #111827;
       font-weight: 600;
-      box-shadow: 0 16px 30px rgba(249, 115, 22, 0.45);
       border: none;
+      box-shadow: 0 20px 40px rgba(249, 115, 22, 0.55);
     }
+
     .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 20px 40px rgba(249, 115, 22, 0.65);
+      box-shadow: 0 24px 55px rgba(249, 115, 22, 0.7);
+      background: linear-gradient(135deg, var(--accent-dark), var(--accent-soft));
     }
-    .btn-ghost {
-      border: 1px solid rgba(148, 163, 184, 0.55);
-      color: #e5e7eb;
-      background: rgba(15, 23, 42, 0.8);
+
+    .btn-secondary {
+      border: 1px solid var(--pill-border);
+      color: var(--text-main);
+      background: rgba(15, 23, 42, 0.9);
+      font-weight: 500;
     }
-    .btn-ghost:hover {
-      background: rgba(30, 64, 175, 0.6);
+
+    .btn-secondary:hover {
+      background: rgba(30, 64, 175, 0.7);
+      border-color: rgba(129, 140, 248, 0.8);
     }
+
     .footnote {
       font-size: 11px;
       color: #6b7280;
       line-height: 1.5;
+      margin-top: 4px;
     }
-    .logo {
+
+    .provider {
       font-size: 11px;
       color: #9ca3af;
       margin-top: 10px;
     }
-    @media (max-width: 480px) {
-      h1 { font-size: 22px; }
-      .price-main { font-size: 22px; }
-      .card { padding: 22px 18px 18px; }
+
+    .provider span {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    .side-card-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    .side-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .side-item {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      font-size: 13px;
+    }
+
+    .side-bullet {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: #e0f2fe;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .side-label {
+      font-weight: 500;
+      color: #e5e7eb;
+    }
+
+    .side-text {
+      color: #9ca3af;
+      font-size: 12px;
+    }
+
+    .divider {
+      height: 1px;
+      background: radial-gradient(circle, rgba(148, 163, 184, 0.7), transparent);
+      opacity: 0.7;
+      margin: 12px 0 14px;
+    }
+
+    .sales-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    .sales-item {
+      padding: 8px 9px;
+      border-radius: 10px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .sales-name {
+      font-weight: 500;
+      color: #e5e7eb;
+      margin-bottom: 2px;
+    }
+
+    .sales-price {
+      color: #facc15;
+      font-weight: 600;
+    }
+
+    .hint {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      body { padding: 18px; }
+      .page {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .card {
+        padding: 22px 20px 18px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      body { padding: 14px; }
+      h1 { font-size: 24px; }
+      .price-main { font-size: 24px; }
+      .pill-row { gap: 6px; }
+      .actions { flex-direction: column; }
     }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="badge">
-      <span>Premium domain for sale</span>
-    </div>
-    <h1>
-      <span class="domain">digiflyers.com</span> is available to acquire
-    </h1>
-    <p class="subtitle">
-      A strong, memorable name ideal for digital marketing agencies, flyer design tools,
-      print-on-demand platforms, and AI-powered creative SaaS.
-    </p>
-
-    <div class="pill">
-      <span>Brandable · .COM</span>
-      <span>Perfect for marketing / design</span>
-      <span>Ready to transfer instantly</span>
-    </div>
-
-    <div class="price-row">
-      <div>
-        <div class="price-main">$1,500</div>
-        <div class="price-note">One-time purchase · handled securely by GoDaddy / Afternic</div>
+  <div class="page">
+    <!-- العمود الرئيسي -->
+    <section class="card">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Premium domain for sale
       </div>
-    </div>
 
-    <div class="actions">
-     <a href="https://checkoutlink.godaddy.com/6ef4d55c-1b45-4a3a-abcb-d7c51ea702bf" class="btn-primary">
-        Buy now via secure checkout
-      </a>
+      <h1>
+        <span class="domain">digiflyers.com</span> is available to acquire
+      </h1>
 
-      <!-- اختياري: رابط صفحة Afternic -->
-      <a href="https://www.afternic.com/domain/digiflyers.com" class="btn-ghost">
-        Make an offer instead
-      </a>
-    </div>
+      <p class="subtitle">
+        A strong, memorable .COM perfectly suited for digital marketing agencies, flyer
+        design tools, print-on-demand platforms, or AI-powered creative SaaS.
+      </p>
 
-    <p class="footnote">
-      The transaction is processed through GoDaddy / Afternic’s escrow and transfer system.
-      Once payment is completed, the domain will be transferred to your registrar account.
-    </p>
+      <div class="pill-row">
+        <div class="pill"><span class="pill-dot"></span> Brandable · .COM</div>
+        <div class="pill"><span class="pill-dot"></span> Perfect for marketing & design</div>
+        <div class="pill"><span class="pill-dot"></span> Short, memorable & global</div>
+        <div class="pill"><span class="pill-dot"></span> Ready for instant transfer</div>
+      </div>
 
-    <p class="logo">
-      Listing powered by Afternic® / GoDaddy.
-    </p>
-  </main>
+      <div class="price-section">
+        <div class="price-row">
+          <div>
+            <div class="price-main">$1,500 <span>USD</span></div>
+            <div class="price-note">
+              One-time purchase · processed securely through GoDaddy / Afternic.
+            </div>
+          </div>
+          <div class="price-tagline">
+            Serious about marketing?  
+            <br />This name gives you a story from day one.
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a
+          class="btn-primary"
+          href="https://checkoutlink.godaddy.com/6ef4d55c-1b45-4a3a-abcb-d7c51ea702bf"
+        >
+          Buy now via secure checkout
+        </a>
+
+        <a
+          class="btn-secondary"
+          href="https://www.afternic.com/domain/digiflyers.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Make an offer instead
+        </a>
+      </div>
+
+      <p class="footnote">
+        The transaction is fully handled by GoDaddy / Afternic’s escrow and transfer
+        system. Once payment is completed, the domain will be transferred safely to your
+        registrar account.
+      </p>
+
+      <p class="provider">
+        Listing powered by <span>Afternic® / GoDaddy</span>.
+      </p>
+    </section>
+
+    <!-- العمود الجانبي -->
+    <section class="card">
+      <div class="side-card-title">Why this domain works</div>
+      <ul class="side-list">
+        <li class="side-item">
+          <div class="side-bullet">1</div>
+          <div>
+            <div class="side-label">Instant positioning in the marketing space</div>
+            <div class="side-text">
+              “Flyers” immediately signals design, promotion, campaigns and creativity.
+              The “digi” prefix makes it ready for AI and digital-first products.
+            </div>
+          </div>
+        </li>
+        <li class="side-item">
+          <div class="side-bullet">2</div>
+          <div>
+            <div class="side-label">Strong, global, brandable .COM</div>
+            <div class="side-text">
+              Easy to pronounce, easy to spell, and suitable for customers in US, EU and
+              worldwide markets.
+            </div>
+          </div>
+        </li>
+        <li class="side-item">
+          <div class="side-bullet">3</div>
+          <div>
+            <div class="side-label">Perfect for SaaS or productized service</div>
+            <div class="side-text">
+              Ideal for a flyer builder, ad creative generator, print-on-demand studio,
+              or done-for-you marketing service.
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <div class="side-card-title">Project ideas</div>
+      <ul class="side-list">
+        <li class="side-item">
+          <div class="side-bullet">A</div>
+          <div>
+            <div class="side-label">AI flyer & poster generator</div>
+            <div class="side-text">
+              Users type their event or promotion, and your platform generates
+              high-quality flyers in seconds.
+            </div>
+          </div>
+        </li>
+        <li class="side-item">
+          <div class="side-bullet">B</div>
+          <div>
+            <div class="side-label">Template marketplace</div>
+            <div class="side-text">
+              Sell premium templates for agencies, small businesses, and event organizers.
+            </div>
+          </div>
+        </li>
+        <li class="side-item">
+          <div class="side-bullet">C</div>
+          <div>
+            <div class="side-label">Done-for-you design studio</div>
+            <div class="side-text">
+              Offer subscription packages where clients get new flyers and social media
+              creatives every month.
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <div class="side-card-title">Similar domains that sold</div>
+      <div class="sales-grid">
+        <div class="sales-item">
+          <div class="sales-name">digiflag.com</div>
+          <div class="sales-price">$1,200</div>
+          <div>Brandable marketing domain</div>
+        </div>
+        <div class="sales-item">
+          <div class="sales-name">metapromos.com</div>
+          <div class="sales-price">$1,500</div>
+          <div>Promo / marketing brand</div>
+        </div>
+        <div class="sales-item">
+          <div class="sales-name">digiprint.com</div>
+          <div class="sales-price">$495</div>
+          <div>Print & design brand</div>
+        </div>
+        <div class="sales-item">
+          <div class="sales-name">digidevs.com</div>
+          <div class="sales-price">$950</div>
+          <div>Digital dev brand</div>
+        </div>
+      </div>
+
+      <p class="hint">
+        Pricing for <strong>digiflyers.com</strong> is aligned with recent sales of
+        comparable marketing & design domains, with room for future upside.
+      </p>
+    </section>
+  </div>
 </body>
 </html>
